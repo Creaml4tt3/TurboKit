@@ -1,0 +1,9 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Your Site",
+  "alternateName": "yoursite.com",
+  "url": "https://yoursite.com",
+  "logo": "https://yoursite.com/img/icon/android-chrome-512x512.png",
+  "sameAs": "https://twitter.com/yoursite"
+}

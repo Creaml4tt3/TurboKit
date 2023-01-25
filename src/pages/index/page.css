@@ -1,0 +1,120 @@
+@import "@/util/shared.css";
+
+/*========================
+          Flex
+==========================*/
+.body,
+.main,
+.article,
+.section,
+.icon,
+.card,
+.txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+/*============== Nav ================*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+.lang {
+  color: var(--bg);
+  background: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 2rem;
+  padding: 0.25rem 2rem 0.25rem 1rem;
+  cursor: pointer;
+  margin: 0 1rem;
+}
+
+option {
+  background: var(--bg);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+/*============== Header ================*/
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-top: 7rem;
+}
+
+.title {
+  --h: 60px;
+  --w: 570px;
+}
+
+.icon {
+  padding: 1.5rem;
+  height: 6rem;
+  width: 6rem;
+  background: var(--color);
+  fill: var(--accent);
+  border-radius: var(--radius);
+  margin-right: 1.5rem;
+}
+
+.description {
+  --h: 30px;
+  --w: 550px;
+  margin-top: 0.5rem;
+}
+
+/*============== Cards ================*/
+.cards {
+  display: flex;
+}
+
+.card {
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  margin: 2rem;
+  padding: clamp(1rem, var(--linear), 4rem);
+}
+
+.card-title {
+  --h: 40px;
+  --w: 200px;
+  margin: 1rem 0;
+}
+
+.card-description {
+  --h: 200px;
+  --w: 200px;
+}
+
+/*============== Sections ================*/
+.section {
+  margin: 3rem 0;
+}
+
+.subtitle {
+  --w: 300px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.video,
+.image {
+  --w: 1200px;
+  aspect-ratio: 16/9;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.footer {
+  padding: 2rem 0;
+}

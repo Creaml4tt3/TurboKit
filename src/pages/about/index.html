@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- ________________________________________ Head ________________________________________ -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./page.css" />
+    <script type="module" async defer src="./page.js"></script>
+    <!-- meta tags/icons/manifest will be injected here -->
+  </head>
+  <!-- ________________________________________ Body  ________________________________________ -->
+  <body class="body">
+    <nav class="nav">
+      <a
+        v-text="i18n.nav.link"
+        target="_blank"
+        href="https://hamedbaatour.gumroad.com/l/turbokit"
+        >Download TurboKit</a
+      >
+
+      <div>
+        <label for="lang">
+          <span v-text="i18n.nav.lang">Language</span>
+        </label>
+        <select name="lang" id="lang" class="lang">
+          <option value="en" v-text="i18n.nav.langs.en">English</option>
+          <option value="ar" v-text="i18n.nav.langs.ar">Arabic</option>
+          <option value="es" v-text="i18n.nav.langs.es">Spanish</option>
+          <option value="gr" v-text="i18n.nav.langs.gr">German</option>
+          <option value="fr" v-text="i18n.nav.langs.fr">French</option>
+        </select>
+      </div>
+    </nav>
+
+    <header class="header">
+      <img class="icon" src="/img/logo.svg" inline />
+      <div class="txt">
+        <h1 class="title" v-text="i18n.header.title" loading>
+          <!-- rewriting text in HTML for SEO purposes-->
+          Hi There,<br />
+          TurboKit Is Here!
+        </h1>
+        <p class="description" v-text="i18n.header.description" loading>
+          The Best Gulp Boilerplate To Build Blazing Fast Websites
+        </p>
+      </div>
+    </header>
+
+    <main class="main">
+      <article class="article">
+        <section class="section">
+          <span class="example" v-text="i18n.body.eg">Example</span>
+          <h2 class="subtitle" v-text="i18n.body.skeleton">Skeleton Loader</h2>
+          <ul class="cards">
+            <li v-each-card="cards" class="card">
+              <h3 class="card-title" loading>{card.title}</h3>
+              <p class="card-description" loading>{card.description}</p>
+            </li>
+            <!--extra cards placeholders-->
+            <li class="card" placeholder>
+              <h3 class="card-title" loading></h3>
+              <p class="card-description" loading></p>
+            </li>
+            <li class="card" placeholder>
+              <h3 class="card-title" loading></h3>
+              <p class="card-description" loading></p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <span class="example" v-text="i18n.body.eg">Example</span>
+          <h2 class="subtitle" v-text="i18n.body.image">LazyLoaded Image</h2>
+          <picture class="image">
+            <img data-src="/img/example.jpg" alt="example" />
+          </picture>
+        </section>
+
+        <section class="section">
+          <span class="example" v-text="i18n.body.eg">Example</span>
+          <h2 class="subtitle" v-text="i18n.body.video">LazyLoaded Video</h2>
+          <video
+            class="video"
+            autoplay
+            muted
+            loop
+            playsinline
+            disableremoteplayback
+            data-src="https://gitlab.com/xemel39/statics/-/raw/main/example__1_.mp4"
+          ></video>
+        </section>
+      </article>
+    </main>
+
+    <aside class="aside">
+      <div class="widget"></div>
+      <div class="widget"></div>
+    </aside>
+
+    <footer class="footer">
+      <span class="copyright"
+        ><span v-text="i18n.footer.credit">Created by</span>
+        <a href="http://twitter.com/hamedbaatour" v-text="i18n.footer.link"
+          >Hamed Baatour</a
+        ></span
+      >
+    </footer>
+
+    <!-- Schema.org -->
+    <script type="application/ld+json" src="./config/schema.json"></script>
+  </body>
+</html>

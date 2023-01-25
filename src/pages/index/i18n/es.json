@@ -1,0 +1,41 @@
+{
+  "header": {
+    "title": "Crea Un Sitio Rápidamente",
+    "description": "¡La mejor plantilla para crear sitios web ultrarrápidos!"
+  },
+  "nav": {
+    "link": "Descargar TurboKit",
+    "lang": "Idioma",
+    "langs": {
+      "en": "Inglés",
+      "ar": "Árabe",
+      "es": "Español",
+      "gr": "Alemán",
+      "fr": "Francés"
+    }
+  },
+  "body": {
+    "eg": "Ejemplo",
+    "skeleton": "Carga Esquelética",
+    "image": "Imagen Perezosa",
+    "video": "Video Perezoso",
+    "cards": [
+      {
+        "title": "Tarjeta 1",
+        "description": "Esta es una tarjeta de demostración increíble"
+      },
+      {
+        "title": "Tarjeta 2",
+        "description": "Esta es una tarjeta de demostración increíble"
+      },
+      {
+        "title": "Tarjeta 3",
+        "description": "Esta es una tarjeta de demostración increíble"
+      }
+    ]
+  },
+  "footer": {
+    "credit": "Creado Por",
+    "link": "Hamed Baatour"
+  }
+}

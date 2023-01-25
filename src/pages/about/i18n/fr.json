@@ -1,0 +1,41 @@
+{
+  "header": {
+    "title": "Créer un site rapidement",
+    "description": "Le meilleur modèle pour créer des sites Web ultra-rapides!"
+  },
+  "nav": {
+    "link": "Télécharger TurboKit",
+    "lang": "Langue",
+    "langs": {
+      "en": "Anglais",
+      "ar": "Arabe",
+      "es": "Espagnol",
+      "gr": "Allemand",
+      "fr": "Français"
+    }
+  },
+  "body": {
+    "eg": "Exemple",
+    "skeleton": "Chargeur Squelette",
+    "image": "Image Charger Paresseusement",
+    "video": "Vidéo Charger Paresseusement",
+    "cards": [
+      {
+        "title": "Carte 1",
+        "description": "C'est une superbe carte de démonstration"
+      },
+      {
+        "title": "Carte 2",
+        "description": "C'est une superbe carte de démonstration"
+      },
+      {
+        "title": "Carte 3",
+        "description": "C'est une superbe carte de démonstration"
+      }
+    ]
+  },
+  "footer": {
+    "credit": "Créé par",
+    "link": "Hamed Baatour"
+  }
+}

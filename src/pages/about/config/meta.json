@@ -1,0 +1,24 @@
+{
+  "list": ["og", "se", "schema", "twitter"],
+  "meta": {
+    "type": "website",
+    "keywords": ["website", "with", "meta", "tags"],
+    "title": "Turbo Kit • A Super Powerful App Boilerplate",
+    "site_name": "Turbo Kit • A Super Powerful App Boilerplate",
+    "description": "The Best Boilerplate To Build Blazing Fast Websites",
+    "abstract": "The Best Website Boilerplate",
+    "locale": "en_Us",
+    "author": "Hamed Baatour",
+    "copyright": "Hamed Baatour",
+    "webauthor": "Hamed Baatour",
+    "rating": "safe for kids",
+    "contact": "hamedbaatour@gmail.com",
+    "video": "https://yoursite.com/img/meta.png",
+    "audio": "https://yoursite.com/audio/meta.mp3",
+    "image": "https://yoursite.com/video/meta.mp4",
+    "robots": {
+      "index": true,
+      "follow": true
+    }
+  }
+}

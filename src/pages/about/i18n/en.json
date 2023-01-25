@@ -1,0 +1,41 @@
+{
+  "header": {
+    "title": "Build Sites Faster",
+    "description": "The best template to build blazing fast websites"
+  },
+  "nav": {
+    "link": "Download TurboKit",
+    "lang": "Language",
+    "langs": {
+      "en": "English",
+      "ar": "Arabic",
+      "es": "Spanish",
+      "gr": "German",
+      "fr": "French"
+    }
+  },
+  "body": {
+    "eg": "Example",
+    "skeleton": "Skeleton Loader",
+    "image": "LazyLoaded Image",
+    "video": "LazyLoaded Video",
+    "cards": [
+      {
+        "title": "Card 1",
+        "description": "This is an awesome demo card"
+      },
+      {
+        "title": "Card 2",
+        "description": "This is an awesome demo card"
+      },
+      {
+        "title": "Card 3",
+        "description": "This is an awesome demo card"
+      }
+    ]
+  },
+  "footer": {
+    "credit": "Created by",
+    "link": "Hamed Baatour"
+  }
+}

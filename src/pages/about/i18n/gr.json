@@ -1,0 +1,41 @@
+{
+  "header": {
+    "title": "Webseiten schneller erstellen",
+    "description": "Die beste Vorlage, um blitzschnelle Websites zu erstellen!"
+  },
+  "nav": {
+    "link": "TurboKit herunterladen",
+    "lang": "Sprache",
+    "langs": {
+      "en": "Englisch",
+      "ar": "Arabisch",
+      "es": "Spanisch",
+      "gr": "Deutsch",
+      "fr": "Französisch"
+    }
+  },
+  "body": {
+    "eg": "Example",
+    "skeleton": "Skelettlader",
+    "image": "LazyLoaded-Bild",
+    "video": "Lazyloaded-Video",
+    "cards": [
+      {
+        "title": "Karte 1",
+        "description": "Das ist eine tolle Demokarte"
+      },
+      {
+        "title": "Karte 2",
+        "description": "Das ist eine tolle Demokarte"
+      },
+      {
+        "title": "Karte 3",
+        "description": "Das ist eine tolle Demokarte"
+      }
+    ]
+  },
+  "footer": {
+    "credit": "erstellt von",
+    "link": "Hamed Baatour"
+  }
+}
