@@ -1,0 +1,28 @@
+{
+  "LTR": {
+    "Poppins": {
+      "subset": "latin",
+      "styles": ["400", "700"],
+      "fallback": {
+        "font-family": "Verdana",
+        "font-size": "17px",
+        "line-height": "1.5",
+        "word-spacing": "-0.15px",
+        "letter-spacing": "-0.55px"
+      }
+    }
+  },
+  "RTL": {
+    "Cairo": {
+      "subset": "arabic",
+      "styles": ["400", "700"],
+      "fallback": {
+        "font-family": "Verdana",
+        "font-size": "17px",
+        "line-height": "1.5",
+        "word-spacing": "-0.15px",
+        "letter-spacing": "-0.55px"
+      }
+    }
+  }
+}

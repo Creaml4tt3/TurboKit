@@ -1,0 +1,11 @@
+{
+  "ci": {
+    "collect": {
+      "numberOfRuns": 1
+    },
+    "assert": {
+      "budgetsFile": "budget.json",
+      "preset": "lighthouse:recommended"
+    }
+  }
+}
