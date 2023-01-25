@@ -1,0 +1,65 @@
+diff --git a/node_modules/tinybind/dist/tinybind.js b/node_modules/tinybind/dist/tinybind.js
+index 3199b45..f194414 100644
+--- a/node_modules/tinybind/dist/tinybind.js
++++ b/node_modules/tinybind/dist/tinybind.js
+@@ -4,6 +4,11 @@
+   (global = global || self, global.tinybind = factory());
+ }(this, function () { 'use strict';
+ 
++  // custom: remove placholder animation function
++  function removePlacehodler(el, value) {
++    if (value && el && el.removeAttribute) el.removeAttribute("loading");
++  }
++
+   var OPTIONS = ['prefix', 'templateDelimiters', 'rootInterface', 'preloadData', 'handler'];
+   var EXTENSIONS = ['binders', 'formatters', 'adapters'];
+ 
+@@ -628,6 +633,8 @@
+   var textBinder = {
+     routine: function routine(node, value) {
+       node.data = value != null ? value : '';
++      // custom
++      removePlacehodler(node.parentNode, value);
+     }
+   };
+   var DECLARATION_SPLIT = /((?:'[^']*')*(?:(?:[^\|']*(?:'[^']*')+[^\|']*)+|[^\|]+))|^$/g;
+@@ -1046,7 +1053,8 @@
+           this.marker = document.createComment(" tinybind: " + this.type + " ");
+           this.iterated = [];
+           el.parentNode.insertBefore(this.marker, el);
+-          el.parentNode.removeChild(el);
++          // custom
++          // el.parentNode.removeChild(el);
+         } else {
+           this.iterated.forEach(function (view) {
+             view.bind();
+@@ -1061,6 +1069,14 @@
+         }
+       },
+       routine: function routine(el, collection) {
++        // custom: remove placeholder after data loaded
++        if (collection && collection.length && el && el.parentNode) {
++          el.parentNode
++            .querySelectorAll("[placeholder]")
++            .forEach((el) => el.parentNode.removeChild(el));
++          el.parentNode.removeChild(el);
++        }
++
+         var _this = this;
+ 
+         var modelName = this.arg;
+@@ -1167,10 +1183,14 @@
+     // Sets the element's text value.
+     text: function text(el, value) {
+       el.textContent = value != null ? value : '';
++      // custom
++      removePlacehodler(el, value);
+     },
+     // Sets the element's HTML content.
+     html: function html(el, value) {
+       el.innerHTML = value != null ? value : '';
++      // custom
++      removePlacehodler(el, value);
+     },
+     // Shows the element when value is true.
+     show: function show(el, value) {

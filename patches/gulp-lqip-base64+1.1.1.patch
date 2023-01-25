@@ -1,0 +1,19 @@
+diff --git a/node_modules/gulp-lqip-base64/dist/index.js b/node_modules/gulp-lqip-base64/dist/index.js
+index 8fae6fc..62e3056 100644
+--- a/node_modules/gulp-lqip-base64/dist/index.js
++++ b/node_modules/gulp-lqip-base64/dist/index.js
+@@ -64,12 +64,12 @@ const processHtml = (file, { srcAttr = 'src', attribute = 'data-src' } = {}) =>
+           return false
+         }
+ 
+-        const pathImg = path__default['default'].join(fileDir, src);
++        const pathImg = path__default['default'].join(src[0] === '/' ? file._base : fileDir, src);
+         return validImgExtensions.includes(path__default['default'].extname(pathImg).toLowerCase())
+       })
+       .map(el => {
+         const src = $(el).attr(srcAttr);
+-        const pathImg = path__default['default'].join(fileDir, src);
++        const pathImg = path__default['default'].join(src[0] === '/' ? file._base : fileDir, src);
+         return processImage_1(pathImg, src)
+       });
+ 
