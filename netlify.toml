@@ -1,0 +1,15 @@
+[[headers]]
+ for = "/*.ico"
+   [headers.values]
+    Content-Encoding = "br"
+[[headers]]
+ for = "/*"
+   [headers.values]
+    Cache-Control = "public, max-age=31536000"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    Referrer-Policy = "no-referrer"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    Content-Security-Policy = "upgrade-insecure-requests; object-src 'none';"
+    Permissions-Policy = "accelerometer=(self), autoplay=(self), camera=(self), cross-origin-isolated=(self), display-capture=(self), document-domain=(self), encrypted-media=(self), fullscreen=(self), geolocation=(self), gyroscope=(self), magnetometer=(self), microphone=(self), midi=(self), payment=(self), picture-in-picture=(self), publickey-credentials-get=(self), screen-wake-lock=(self), sync-xhr=(self), usb=(self), xr-spatial-tracking=(self), clipboard-read=(self), clipboard-write=(self), hid=(self), idle-detection=(self), serial=(self)"
